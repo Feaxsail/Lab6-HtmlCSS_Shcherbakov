@@ -1,0 +1,18 @@
+h1 {
+    color: blue;
+}
+
+.btn-primary {
+    background: #2a6df4;
+    color: white;
+    
+}
+
+#generation {
+    color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
