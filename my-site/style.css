@@ -14,23 +14,31 @@ header, footer {
     background: #2a6df4;
     color: white;
     padding: 15px;
+    text-align: center;
 }
 
+/* Исправляем навигацию */
 nav {
     background: #eef2ff;
     padding: 10px;
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 nav a {
     text-decoration: none;
     color: #2a6df4;
     font-weight: bold;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #2a6df4;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background: #2a6df4;
+    color: white;
 }
 
 main {
@@ -47,7 +55,10 @@ section, aside {
     border: 1px solid #d0d7e2;
 }
 
-a {
+/* Стили для кнопок-ссылок в контенте */
+a.btn-primary, 
+section a, 
+footer a {
     display: inline-block;
     padding: 8px 16px;
     background: #2a6df4;
@@ -55,9 +66,12 @@ a {
     text-decoration: none;
     border-radius: 4px;
     margin: 5px 0;
+    border: none;
 }
 
-a:hover {
+a.btn-primary:hover, 
+section a:hover, 
+footer a:hover {
     opacity: 0.85;
     cursor: pointer;
 }
@@ -76,6 +90,7 @@ cite {
     color: #666;
 }
 
+/* Стили для форм */
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -119,6 +134,7 @@ button:hover {
     opacity: 0.85;
 }
 
+/* Стили для медиа */
 video, audio, iframe {
     display: block;
     margin: 15px 0;
@@ -127,4 +143,30 @@ video, audio, iframe {
 
 iframe {
     border: none;
+}
+
+/* Стили для SVG */
+.logo {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #2a6df4;
+    border-radius: 8px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #d0d7e2;
+    margin: 20px 0;
+}
+
+div[style*="text-align: center"] {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
