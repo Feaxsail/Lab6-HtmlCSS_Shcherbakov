@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Медиаконтент</title>
 </head>
 <body>
-    <h1>Медиа страница</h1>
-    <a href="index.html">Вернуться на главную</a>
+    <h1>Медиаконтент в HTML</h1>
+    
+    <h2>Видео</h2>
+    <video controls width="400">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    
+    <h2>Аудио</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+    
+    <h2>YouTube видео</h2>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://yandex.ru/video/preview/13010421723230926317" 
+        title="История ЭВМ" 
+        allowfullscreen>
+    </iframe>
+    
+    
+    <p><a href="index.html">Вернуться на главную</a></p>
 </body>
 </html>
