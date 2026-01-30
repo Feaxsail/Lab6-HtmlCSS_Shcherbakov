@@ -4,79 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Формы</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HTML ter input и его вариации</h1>
+    <header>
+        <h1>Формы</h1>
+    </header>
     
-    <form>
-        <label> Телефон: <input type="tel" placeholder="+7 (____) ____-____-____" /> </label>
-        <br />
-        <br />
-        <label> Email: <input type="email" placeholder="example@mail.com" /> </label>
-        <br />
-        <br />
-        <label> Пароль: <input type="password" /> </label>
-        <br />
-        <br />
-        <label> Сайт: <input type="url" placeholder="https://example.com" /> </label>
-        <br />
-        <br />
-        <label> Поиск: <input type="search" placeholder="Поиск..." /> </label>
-        <br />
-        <br />
-        <input type="submit" value="Отправить" />
-    </form>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="media.html">Медиа</a>
+        <a href="vector.html">SVG</a>
+    </nav>
     
-    <center>Типы полей ввода:</center>
+    <main>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Регистрация</legend>
+                    
+                    <label>Имя: <input type="text" placeholder="Введите ваше имя"></label>
+                    <label>Email: <input type="email" placeholder="example@mail.com"></label>
+                    <label>Телефон: <input type="tel" placeholder="+7 (___) ___-__-__"></label>
+                    <label>Пароль: <input type="password" placeholder="Введите пароль"></label>
+                    
+                    <label>Страна: 
+                        <select>
+                            <optgroup label="Европа">
+                                <option>Россия</option>
+                                <option>Германия</option>
+                            </optgroup>
+                            <optgroup label="Азия">
+                                <option>Китай</option>
+                                <option>Япония</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                    
+                    <label><input type="checkbox"> Согласен с условиями</label>
+                    <button type="submit">Зарегистрироваться</button>
+                </fieldset>
+            </form>
+        </section>
+        
+        <aside>
+            <p>Эта форма демонстрирует различные типы полей ввода HTML5.</p>
+        </aside>
+    </main>
     
-    <table>
-        <tr>
-            <td>Тип</td>
-            <td>Описание</td>
-            <td>Пример</td>
-        </tr>
-        <tr>
-            <td>text</td>
-            <td>Обычное текстовое поле</td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>password</td>
-            <td>Поле для пароля (скрывает символы)</td>
-            <td><input type="password"></td>
-        </tr>
-        <tr>
-            <td>email</td>
-            <td>Поле для email (проверяет формат)</td>
-            <td><input type="email"></td>
-        </tr>
-        <tr>
-            <td>number</td>
-            <td>Только цифры</td>
-            <td><input type="number"></td>
-        </tr>
-        <tr>
-            <td>date</td>
-            <td>Выбор даты</td>
-            <td><input type="date"></td>
-        </tr>
-        <tr>
-            <td>checkbox</td>
-            <td>Чекбокс</td>
-            <td><input type="checkbox"></td>
-        </tr>
-        <tr>
-            <td>radio</td>
-            <td>Радиокнопка</td>
-            <td><input type="radio"></td>
-        </tr>
-        <tr>
-            <td>submit</td>
-            <td>Кнопка отправки формы</td>
-            <td><input type="submit"></td>
-        </tr>
-    </table>
-    
-    <p><a href="index.html">Вернуться на главную</a></p>
+    <footer>
+        <a href="index.html">< Назад</a>
+    </footer>
 </body>
 </html>
